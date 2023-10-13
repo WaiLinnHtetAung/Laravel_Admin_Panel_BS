@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+}
+
+:root {
+    --main-color: #00bffe;
+    --sec-color: #eb1c24;
+}
+
+.btn {
+    background-color: var(--main-color) !important;
+    color: #fff;
+}
+
+/* ------login page--------  */
+
+.login,
+.register {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login form,
+.register form {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.login .logo img,
+.register .logo img {
+    width: 150px;
+}
+
+@media (max-width: 1600px) {
+    .login form,
+    .register form {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    .login form,
+    .register form {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 999px) {
+    .login form,
+    .register form {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .login form,
+    .register form {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .login form,
+    .register form {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
