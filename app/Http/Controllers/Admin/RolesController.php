@@ -33,6 +33,9 @@ class RolesController extends Controller
 
         return Datatables::of($data)
             ->addIndexColumn()
+            ->editColumn('plus-icon', function ($each) {
+                return null;
+            })
             ->addColumn('permissions', function ($each) {
                 $permissions = $each->permissions->pluck('name');
                 $output = '';

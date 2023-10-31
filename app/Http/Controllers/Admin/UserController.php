@@ -31,6 +31,9 @@ class UserController extends Controller
         $data = User::query();
 
         return Datatables::of($data)
+            ->editColumn('plus-icon', function ($each) {
+                return null;
+            })
             ->addIndexColumn()
             ->addColumn('role', function ($each) {
                 $roles = $each->roles->pluck('name');

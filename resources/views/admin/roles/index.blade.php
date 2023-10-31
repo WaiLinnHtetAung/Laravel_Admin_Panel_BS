@@ -17,8 +17,9 @@
             @endcan
         </div>
         <div class="card-body">
-            <table class="table table-bordered" id="DataTable">
+            <table class="table table-bordered w-100 table-striped" id="DataTable">
                 <thead>
+                    <th class="no-sort"></th>
                     <th>ID</th>
                     <th>Name</th>
                     <th>Permissions</th>
@@ -38,9 +39,14 @@
             //datatable
             const table = new DataTable('#DataTable', {
                 processing: true,
+                responsive: true,
                 serverSide: true,
                 ajax: '/admin/roles-datatable',
                 columns: [{
+                        data: 'plus-icon',
+                        name: 'plus-icon'
+                    },
+                    {
                         data: 'id',
                         name: 'id'
                     },
@@ -61,6 +67,9 @@
                     targets: 'no-sort',
                     sortable: false,
                     searchable: false
+                }, {
+                    targets: [0],
+                    class: 'control'
                 }]
             })
 
