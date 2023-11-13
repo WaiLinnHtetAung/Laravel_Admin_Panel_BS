@@ -2,7 +2,7 @@
     <div class="app-brand demo">
         <a href="index.html" class="app-brand-link">
             <img style="width: 35px;" src="{{ asset('logo.png') }}" alt="">
-            <span class="demo menu-text fw-bolder ms-2" style="font-size: 20px;">Admin Panel</span>
+            <span class="demo menu-text fw-bolder ms-2" style="font-size: 20px;">{{ __('messages.panel_name') }}</span>
         </a>
 
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
