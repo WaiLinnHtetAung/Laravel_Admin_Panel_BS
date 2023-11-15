@@ -45,31 +45,23 @@
 
 /* select 2 */
 
-.select2.select2-container {
-    width: 100% !important;
-}
-
-.select2-selection {
-    border: 1px solid rgb(209, 207, 207) !important;
-    padding: 5px !important;
-    border-radius: 5px !important;
-    width: 100% !important;
-}
-
 .select2-selection .select2-selection__choice {
     margin: 0 0 5px 5px !important;
     background-color: rgb(46, 168, 77) !important;
     border: none !important;
     color: #fff !important;
-    padding: 3px !important;
+    padding: 5px 8px !important;
 }
 
 .select2-selection .select2-selection__choice span {
     font-size: 14px !important;
 }
 
-.select2-selection__choice__remove {
-    color: #fff !important;
+#select2-roles-container > li > button {
+    /* cross button  */
+    width: 0.55rem !important;
+    height: 0.55rem !important;
+    margin-right: 0.4rem !important;
 }
 
 /* icon of page */

@@ -29,7 +29,8 @@
                                 style="font-size: 12px; background: rgb(27, 199, 170);">Disselect
                                 All</span>
                         </div>
-                        <select name="permissions[]" id="permissions" class="select2 form-control" multiple="multiple">
+                        <select name="permissions[]" id="permissions" class="select2 form-control" multiple="multiple"
+                            data-placeholder="--- Please Select ---">
                             @foreach ($permissions as $id => $permission)
                                 <option value="{{ $permission->name }}"
                                     {{ in_array($permission->name, old('permissions', [])) ? 'selected' : '' }}>
