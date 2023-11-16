@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
  */
 Route::get('/', function () {return redirect()->route('admin.home');});
 
-Route::group(['middleware' => 'auth', 'prefix' => 'admin', 'as' => 'admin.'], function () {
+Route::group(['middleware' => ['auth', 'prevent-back-history'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::get('/', [ProfileController::class, 'dashboard'])->name('home');
 
     //permission
