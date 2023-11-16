@@ -94,6 +94,9 @@
                         $.ajax({
                             url: "/admin/roles/" + id,
                             type: "DELETE",
+                            data: {
+                                _token: "{{ csrf_token() }}"
+                            },
                             success: function() {
                                 table.ajax.reload();
                             }
